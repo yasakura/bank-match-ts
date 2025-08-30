@@ -20,6 +20,7 @@ npm install
 ## 🛠️ Scripts disponibles
 
 ### Développement
+
 ```bash
 npm run dev          # Lance le serveur de développement
 npm run build        # Build de production
@@ -27,6 +28,7 @@ npm run preview      # Prévisualise la build
 ```
 
 ### Qualité du code
+
 ```bash
 npm run lint         # Vérifie le code avec ESLint
 npm run lint:fix     # Corrige automatiquement les erreurs ESLint
@@ -34,7 +36,15 @@ npm run format       # Formate le code avec Prettier
 npm run format:check # Vérifie le formatage Prettier
 ```
 
+### 🔒 Hooks Git (Husky)
+
+Le projet utilise Husky pour exécuter automatiquement des vérifications avant chaque commit :
+
+- **Pre-commit** : Exécute lint-staged pour vérifier et formater le code
+- **Lint-staged** : Applique ESLint et Prettier uniquement sur les fichiers modifiés
+
 ### Tests
+
 ```bash
 npm run test         # Lance les tests une fois
 npm run test:watch   # Lance les tests en mode watch
@@ -65,6 +75,7 @@ Le projet utilise Tailwind CSS pour le styling utilitaire. Tous les composants s
 - **Composants réutilisables** avec des variantes
 
 ### Composants disponibles :
+
 - **Button** : Boutons avec variantes primary/secondary
 - **Card** : Cartes avec variantes default/elevated/outlined
 
